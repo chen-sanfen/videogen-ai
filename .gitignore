@@ -4,6 +4,11 @@ node_modules/
 # Secrets / env
 .env
 .env.*
+*.key
+
+# Runtime uploads & failed generation outputs (not source)
+generator/.uploads/
+generator/failed/
 
 # Build outputs & caches
 .vite/
