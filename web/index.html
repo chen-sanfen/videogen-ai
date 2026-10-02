@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090d" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236f5ee0'/><path d='M12 9l12 7-12 7z' fill='white'/></svg>" />
+    <title>Promix · AI 视频生成器</title>
+    <script>
+      // 首屏渲染前定好主题（在 index.html 里执行，避免刷新时先闪一下深色再变白）。
+      // 除黑白之外还有第三档「自动」：没手动选过时跟随系统深浅色。
+      (function () {
+        try {
+          var mode = localStorage.getItem('promix-theme') || 'auto';
+          if (mode !== 'light' && mode !== 'dark') mode = 'auto';
+          var sys = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = mode === 'auto' ? sys : mode;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>

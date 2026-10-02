@@ -1,0 +1,84 @@
+{
+  "id": "GeneratedExample",
+  "title": "CURSOR / PRODUCT FILM",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "theme": {
+    "bg": "#08090d",
+    "panel": "#11131a",
+    "panel2": "#171a23",
+    "line": "#282c38",
+    "text": "#f4f4f6",
+    "muted": "#8d93a3",
+    "purple": "#9b8cff",
+    "blue": "#6dd8ff",
+    "green": "#75e1a0",
+    "orange": "#ffbd7c",
+    "pink": "#f59ee1"
+  },
+  "scenes": [
+    {
+      "name": "idea",
+      "durationInFrames": 120,
+      "overlap": 15,
+      "elements": [
+        { "type": "title", "props": { "eyebrow": "FROM A THOUGHT", "text": "\"Build a calm place to focus.\"", "fontSize": 60, "duration": 120 } },
+        { "type": "subtitle", "props": { "text": "从一个想法开始", "start": 20, "end": 110 } }
+      ]
+    },
+    {
+      "name": "agent",
+      "durationInFrames": 150,
+      "overlap": 15,
+      "elements": [
+        { "type": "codeWindow", "props": { "title": "focus-dashboard / workspace", "x": 230, "y": 190, "w": 650, "h": 560, "lines": ["import { Agent } from \"cursor\";", "", "export default function Workspace() {", "  const [idea, setIdea] = useState(\"\");", "  return <ProductCanvas idea={idea} />;", "}"] } },
+        { "type": "agentPanel", "props": { "title": "Agent / workspace", "request": "Build a calm focus dashboard", "subtext": "with a timer, daily goal, and a soft visual rhythm.", "status": "Reading codebase", "files": ["+ src/components/FocusCard.tsx", "+ src/styles/theme.css", "✓ npm test passed"], "x": 1060, "y": 190, "w": 570, "h": 560 } },
+        { "type": "callout", "props": { "text": "Agent understands the work.", "top": 90, "fontSize": 27, "duration": 150 } },
+        { "type": "subtitle", "props": { "text": "Agent 理解代码库，帮你完成工作", "start": 30, "end": 135 } }
+      ]
+    },
+    {
+      "name": "edit",
+      "durationInFrames": 135,
+      "overlap": 15,
+      "elements": [
+        { "type": "codeWindow", "props": { "title": "src/components/FocusCard.tsx", "x": 310, "y": 152, "w": 1300, "h": 660, "lines": ["- const accent = \"loud\";", "+ const accent = \"quiet\";", "", "- <EmptyState />", "+ <FocusCard goal={goal} />", "", "✓ 3 files updated · tests passed"] } },
+        { "type": "callout", "props": { "text": "EDIT · REVIEW · ITERATE", "top": 54, "fontSize": 16, "duration": 135 } },
+        { "type": "subtitle", "props": { "text": "快速编辑，清晰审查，每一次迭代都在你掌控中", "start": 24, "end": 120 } }
+      ]
+    },
+    {
+      "name": "preview",
+      "durationInFrames": 140,
+      "overlap": 20,
+      "elements": [
+        { "type": "codeFlow", "props": { "count": 8, "speed": 5 } },
+        { "type": "previewCard", "props": { "heading": "Your calm starts here.", "eyebrow": "preview ready", "x": 1030, "y": 270 } },
+        { "type": "particles", "props": { "count": 18, "cx": 1365, "cy": 490, "radius": 260, "duration": 140 } },
+        { "type": "callout", "props": { "text": "See the idea come alive.", "top": 430, "fontSize": 42, "duration": 140 } },
+        { "type": "subtitle", "props": { "text": "即时预览，让想法变成看得见的结果", "start": 24, "end": 124 } }
+      ]
+    },
+    {
+      "name": "end",
+      "durationInFrames": 120,
+      "overlap": 0,
+      "elements": [
+        { "type": "brandEnd", "props": { "brand": "CURSOR", "heading": "Make it real.", "subtext": "从想法到代码，始终更接近你的意图", "duration": 115 } },
+        { "type": "subtitle", "props": { "text": "Cursor，让你专注于创造", "start": 15, "end": 100 } }
+      ]
+    }
+  ],
+  "voice": {
+    "enabled": true,
+    "voiceName": "Microsoft Huihui Desktop",
+    "tracks": [
+      { "scene": "idea", "text": "从一个想法开始" },
+      { "scene": "agent", "text": "Agent 理解代码库，帮你完成工作" },
+      { "scene": "edit", "text": "快速编辑，清晰审查，每一次迭代都在你掌控中" },
+      { "scene": "preview", "text": "即时预览，让想法变成看得见的结果" },
+      { "scene": "end", "text": "Cursor，让你专注于创造。" }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "SmartHomeAppV2",
+  "title": "智享生活 · SUNRISE CUT",
+  "style": "v2",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "theme": {
+    "bg": "#f6f0e6",
+    "ink": "#221f1a",
+    "soft": "#eae0cd",
+    "card": "#ffffff",
+    "line": "#d8ccb4",
+    "orange": "#e8632c",
+    "teal": "#0e8a7b",
+    "amber": "#f2b705",
+    "white": "#ffffff"
+  },
+  "scenes": [
+    {
+      "name": "hook",
+      "durationInFrames": 132,
+      "overlap": 18,
+      "elements": [
+        { "type": "marquee", "props": { "items": ["VOICE FIRST", "全屋智能", "AI AUTO", "秒级响应", "ONE APP"], "y": 150, "speed": 9 } },
+        { "type": "kicker", "props": { "eyebrow": "SMARTHOME · 智享生活", "text": "让每个家，都会思考", "fontSize": 96, "x": 140, "y": 330 } },
+        { "type": "caption", "props": { "text": "让每个家都拥有智慧的大脑", "start": 14, "end": 124, "fontSize": 32 } }
+      ]
+    },
+    {
+      "name": "devices",
+      "durationInFrames": 156,
+      "overlap": 18,
+      "elements": [
+        { "type": "phoneMock", "props": { "x": 1150, "y": 170, "w": 400 } },
+        { "type": "statBlock", "props": { "value": 86, "unit": "+", "label": "设备品类一键接入", "x": 150, "y": 400 } },
+        { "type": "caption", "props": { "text": "语音控制全屋设备，AI为你打理一切", "start": 16, "end": 148, "fontSize": 32 } }
+      ]
+    },
+    {
+      "name": "monitor",
+      "durationInFrames": 138,
+      "overlap": 18,
+      "elements": [
+        { "type": "radarRings", "props": { "cx": 1330, "cy": 470, "count": 4, "speed": 7 } },
+        { "type": "waveBars", "props": { "count": 24, "x": 170, "y": 640, "w": 900, "h": 230, "speed": 8 } },
+        { "type": "caption", "props": { "text": "实时监控家居状态，远程操控尽在掌握", "start": 14, "end": 130, "fontSize": 32 } }
+      ]
+    },
+    {
+      "name": "tempo",
+      "durationInFrames": 126,
+      "overlap": 18,
+      "elements": [
+        { "type": "splitDiag", "props": {} },
+        { "type": "statBlock", "props": { "value": 0.3, "unit": "s", "label": "全屋指令响应", "x": 150, "y": 330 } },
+        { "type": "caption", "props": { "text": "秒级响应，万物互联，打造无缝智能体验", "start": 14, "end": 118, "fontSize": 32 } }
+      ]
+    },
+    {
+      "name": "finale",
+      "durationInFrames": 108,
+      "overlap": 0,
+      "elements": [
+        { "type": "finaleBlock", "props": { "brand": "SMARTHOME", "heading": "智享生活", "subtext": "SMART LIVING · SIMPLY BETTER" } },
+        { "type": "caption", "props": { "text": "智居未来，让生活更简单", "start": 12, "end": 100, "fontSize": 32 } }
+      ]
+    }
+  ],
+  "voice": {
+    "enabled": true,
+    "voiceName": "Microsoft Huihui Desktop",
+    "tracks": [
+      { "scene": "hook", "text": "让每个家都拥有智慧的大脑" },
+      { "scene": "devices", "text": "语音控制全屋设备，AI为你打理一切" },
+      { "scene": "monitor", "text": "实时监控家居状态，远程操控尽在掌握" },
+      { "scene": "tempo", "text": "秒级响应，万物互联，打造无缝智能体验" },
+      { "scene": "finale", "text": "智居未来，让生活更简单" }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Secrets / env
+.env
+.env.*
+
+# Build outputs & caches
+.vite/
+dist/
+public-built/
+
+# Generated media & per-project render outputs
+out/
+*.mp4
+*.wav
+public/voice/
+
+# Deployed copy (built from source, not source itself)
+promix-online/
+
+# Tooling / AI assistant caches / logs
+.workbuddy/
+.claude/
+.studio-logs/
+.trae-html-share-packages/
+*.genie
+*.log
+*.pptx
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# Scratch / debug artifacts (underscore-prefixed)
+_*

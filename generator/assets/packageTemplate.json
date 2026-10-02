@@ -1,0 +1,29 @@
+{
+  "name": "__PROJECT_NAME__",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "build": "tsc --noEmit",
+    "render": "remotion render src/index.ts __COMPOSITION_ID__ out/film.mp4",
+    "still": "remotion still src/index.ts __COMPOSITION_ID__ out/film.png --frame=300",
+    "voice": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/generate-voice.ps1"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.526",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.526",
+    "zod": "4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.0",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "typescript": "5.9.2",
+    "vite": "7.1.7",
+    "@remotion/cli": "4.0.526"
+  }
+}
