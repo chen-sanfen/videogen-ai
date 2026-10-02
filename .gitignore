@@ -5,6 +5,9 @@ node_modules/
 .env
 .env.*
 *.key
+# 点文件形式的密钥（如 generator/.deepseek-key）也需要忽略
+.deepseek-key
+generator/.deepseek-key
 
 # Runtime uploads & failed generation outputs (not source)
 generator/.uploads/
